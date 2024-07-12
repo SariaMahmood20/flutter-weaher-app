@@ -281,7 +281,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: isConnected? buildUI(): notConnected(),
+          child: isConnected? ListView(children: [buildUI()]): notConnected(),
       ),
 
 
